@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/light_pink"
+            android:orientation="vertical"
+            tools:context=".ui.fragments.LoginFragment">
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="184dp"
+                android:layout_height="184dp"
+                android:layout_marginTop="60dp"
+                android:src="@drawable/logo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_20dp"
+                android:layout_marginTop="@dimen/_40dp"
+                android:fontFamily="@font/inter_medium"
+                android:text="@string/onBoarding_text_1"
+                android:textColor="#909090"
+                android:textSize="@dimen/_18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            <ImageView
+                android:id="@+id/imageView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="128dp"
+                android:src="@drawable/arrow_next"
+                app:layout_constraintEnd_toStartOf="@+id/imageView26"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <ImageView
+                android:id="@+id/imageView26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:src="@drawable/dot"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView25"
+                app:layout_constraintEnd_toStartOf="@+id/imageView27"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/imageView25"
+                app:layout_constraintTop_toTopOf="@+id/imageView25" />
+
+            <ImageView
+                android:id="@+id/imageView27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="24dp"
+                android:src="@drawable/dot"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView26"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/imageView26"
+                app:layout_constraintTop_toTopOf="@+id/imageView26" />
+
+            <TextView
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_semibold"
+                android:text="Next"
+                android:padding="@dimen/_10dp"
+                android:background="?attr/selectableItemBackground"
+                android:textColor="#F1AA7F"
+                android:textSize="@dimen/_18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView26" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</layout>

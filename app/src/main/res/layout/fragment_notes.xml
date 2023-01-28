@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingVertical="@dimen/_20dp"
+        tools:context=".ui.fragments.NotesFragment">
+
+
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/folder"
+            android:paddingStart="@dimen/_20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:src="@drawable/back"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView18"
+            app:layout_constraintStart_toEndOf="@+id/imageView18"
+            app:layout_constraintTop_toTopOf="@+id/imageView18" />
+
+        <ImageView
+            android:id="@+id/imageView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/next"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView19"
+            app:layout_constraintStart_toEndOf="@+id/imageView19"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="@dimen/_20dp"
+            android:src="@drawable/ic_baseline_more_vert_24"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView20"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView20" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:textSize="16sp"
+            android:layout_marginEnd="@dimen/_10dp"
+            android:textColor="#FFAC7E"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView21"
+            app:layout_constraintEnd_toStartOf="@+id/imageView21"
+            app:layout_constraintTop_toTopOf="@+id/imageView21" />
+
+        <TextView
+            android:id="@+id/tv_generate_pdf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PDF"
+            android:textSize="16sp"
+            android:layout_marginEnd="@dimen/_10dp"
+            android:textColor="#FFAC7E"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView21"
+            app:layout_constraintEnd_toStartOf="@+id/textView28"
+            app:layout_constraintTop_toTopOf="@+id/imageView21" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_note"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:paddingHorizontal="@dimen/_20dp"
+            android:layout_marginTop="@dimen/_30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView18">
+
+        <EditText
+            android:id="@+id/et_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Title"
+            android:textSize="18sp"
+            android:layout_marginEnd="@dimen/_10dp"
+            android:textColor="#FFAC7E"
+            android:textColorHint="#FFDBC9"
+            android:inputType="text"
+            android:background="@null"
+            android:fontFamily="@font/inter_semibold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+             />
+        <EditText
+            android:id="@+id/note_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Start Writing"
+            android:textSize="14sp"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_marginEnd="@dimen/_10dp"
+            android:textColor="#FFAC7E"
+            android:textColorHint="#FFDBC9"
+            android:inputType="text"
+            android:background="@null"
+            android:fontFamily="@font/inter_medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_title"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            tools:listitem="@layout/item_note"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/note_1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_menu"
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@id/imageView21"
+            app:layout_constraintTop_toBottomOf="@+id/imageView21">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_medium"
+                android:text="Share"
+                android:background="?attr/selectableItemBackground"
+                android:textColor="#FFAC7E"
+                android:textSize="10sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="5dp"
+                android:background="#FFAC7E" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_medium"
+                android:text="Add To Trash"
+                android:background="?attr/selectableItemBackground"
+                android:textColor="#FFAC7E"
+                android:textSize="10sp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="5dp"
+                android:background="#FFAC7E" />
+
+            <TextView
+                android:id="@+id/change_background"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_medium"
+                android:text="Change Background"
+                android:background="?attr/selectableItemBackground"
+                android:textColor="#FFAC7E"
+                android:textSize="10sp" />
+
+
+        </LinearLayout>
+
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_notes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:clickable="true"
+            android:background="#FFAC7E"
+            android:backgroundTint="#FFAC7E"
+            app:layout_constraintBottom_toTopOf="@id/layout_recording"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/ic_add_24_white" />
+
+        <LinearLayout
+            android:id="@+id/layout_floating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/add_notes"
+            app:layout_constraintEnd_toEndOf="@+id/add_notes"
+            app:layout_constraintStart_toStartOf="@+id/add_notes">
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/mic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/imageView11"
+                app:layout_constraintTop_toTopOf="@+id/imageView11" />
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/attach"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toStartOf="@+id/imageView12"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/imageView10"
+                app:layout_constraintTop_toTopOf="@+id/imageView10" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/draw"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toStartOf="@+id/imageView11"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/imageView9"
+                app:layout_constraintTop_toTopOf="@+id/imageView9" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/camera"
+                app:layout_constraintEnd_toStartOf="@+id/imageView10"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/layout_recording"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/bg_recording"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <ImageView
+                android:id="@+id/start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10dp"
+                android:src="@drawable/ic_mic"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/wave"
+                android:layout_weight="1"/>
+
+            <Chronometer
+                android:id="@+id/cmTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:padding="@dimen/_10dp"
+                android:textColor="@color/black"
+                />
+
+
+            <ImageView
+                android:id="@+id/close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10dp"
+                android:src="@drawable/ic_close_24"/>
+
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

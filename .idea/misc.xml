@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/CodeCoyAndroidProjectsAli/TBD/app/src/main/res/drawable/bg_bottom_sheet.xml" value="0.2615" />
+        <entry key="..\:/CodeCoyAndroidProjectsAli/TBD/app/src/main/res/drawable/bg_btn_round_pink.xml" value="0.167" />
+        <entry key="..\:/CodeCoyAndroidProjectsAli/TBD/app/src/main/res/drawable/ic_close_24.xml" value="0.2425" />
+        <entry key="..\:/CodeCoyAndroidProjectsAli/TBD/app/src/main/res/layout/activity_main.xml" value="0.3359375" />
+        <entry key="..\:/CodeCoyAndroidProjectsAli/TBD/app/src/main/res/layout/bottom_sheet_layout.xml" value="0.3359375" />
+        <entry key="..\:/CodeCoyAndroidProjectsAli/TBD/app/src/main/res/layout/fragment_home.xml" value="0.264" />
+        <entry key="..\:/CodeCoyAndroidProjectsAli/TBD/app/src/main/res/layout/fragment_login.xml" value="0.264" />
+        <entry key="..\:/CodeCoyAndroidProjectsAli/TBD/app/src/main/res/layout/fragment_my_profile.xml" value="0.3359375" />
+        <entry key="..\:/CodeCoyAndroidProjectsAli/TBD/app/src/main/res/layout/fragment_notes.xml" value="0.264" />
+        <entry key="..\:/CodeCoyAndroidProjectsAli/TBD/app/src/main/res/layout/fragment_on_boarding.xml" value="0.27575887131252674" />
+        <entry key="..\:/CodeCoyAndroidProjectsAli/TBD/app/src/main/res/layout/fragment_register.xml" value="0.3359375" />
+        <entry key="..\:/CodeCoyAndroidProjectsAli/TBD/app/src/main/res/layout/fragment_sketch.xml" value="0.3359375" />
+        <entry key="..\:/CodeCoyAndroidProjectsAli/TBD/app/src/main/res/layout/fragment_subscription_detail.xml" value="0.2" />
+        <entry key="..\:/CodeCoyAndroidProjectsAli/TBD/app/src/main/res/layout/fragment_subscription_packages.xml" value="0.264" />
+        <entry key="..\:/CodeCoyAndroidProjectsAli/TBD/app/src/main/res/layout/item_note.xml" value="0.3359375" />
+        <entry key="..\:/CodeCoyAndroidProjectsAli/TBD/app/src/main/res/layout/left_drawer_menu.xml" value="0.2234375" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

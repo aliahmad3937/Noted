@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/light_pink"
+            android:orientation="vertical"
+            tools:context=".ui.fragments.MyProfile">
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_40dp"
+                android:fontFamily="@font/inter_semibold"
+                android:text="My Profile"
+                android:textColor="#FFAC7E"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circleImageView"
+                android:layout_width="164dp"
+                android:layout_height="164dp"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/placeholder"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+
+
+
+            <ImageView
+                android:id="@+id/imageView23"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginEnd="25dp"
+                android:shadowColor="@color/black"
+                android:src="@drawable/ic_edit"
+                app:layout_constraintBottom_toBottomOf="@+id/circleImageView"
+                app:layout_constraintEnd_toEndOf="@+id/circleImageView" />
+
+            <ImageView
+                android:id="@+id/imageView24"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:shadowColor="@color/black"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/ic_diamond"
+                app:layout_constraintStart_toStartOf="@+id/circleImageView"
+                app:layout_constraintTop_toTopOf="@+id/circleImageView" />
+
+
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_30dp"
+                android:fontFamily="@font/inter_medium"
+                android:text="Premium User"
+                android:textColor="#FFAC7E"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/circleImageView"
+                app:layout_constraintStart_toStartOf="@+id/circleImageView"
+                app:layout_constraintTop_toBottomOf="@+id/circleImageView" />
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="50dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:layout_marginHorizontal="50dp"
+               android:hint="Aden Sen"
+                android:textColorHint="@color/black"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:fontFamily="@font/inter_medium"
+                android:background="@drawable/bg_et_1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:layout_marginHorizontal="50dp"
+                android:hint="adensen@hotmail.com"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:fontFamily="@font/inter_medium"
+                android:background="@drawable/bg_et_1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_name" />
+
+
+            <TextView
+                android:id="@+id/change_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:text="Change Password"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:paddingBottom="5dp"
+                android:fontFamily="@font/inter_medium"
+                android:background="@drawable/bg_et_2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_email" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</layout>

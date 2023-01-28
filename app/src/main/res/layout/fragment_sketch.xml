@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:paddingTop="@dimen/_20dp"
+        tools:context=".ui.fragments.SketchFragment">
+
+
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20dp"
+            android:src="@drawable/folder"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:src="@drawable/back"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView18"
+            app:layout_constraintStart_toEndOf="@+id/imageView18"
+            app:layout_constraintTop_toTopOf="@+id/imageView18" />
+
+        <ImageView
+            android:id="@+id/imageView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/next"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView19"
+            app:layout_constraintStart_toEndOf="@+id/imageView19"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/color_piker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/ic_color"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView20"
+            app:layout_constraintStart_toEndOf="@+id/imageView20"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20dp"
+            android:src="@drawable/ic_baseline_more_vert_24"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView20"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView20" />
+
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10dp"
+            android:text="Save"
+            android:background="?attr/selectableItemBackground"
+            android:textColor="#FFAC7E"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView21"
+            app:layout_constraintEnd_toStartOf="@+id/imageView21"
+            app:layout_constraintTop_toTopOf="@+id/imageView21" />
+
+
+        <TextView
+            android:id="@+id/et_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20dp"
+            android:layout_marginTop="@dimen/_30dp"
+            android:layout_marginEnd="@dimen/_10dp"
+            android:fontFamily="@font/inter_bold"
+            android:text="Sketch"
+            android:textColor="#FFAC7E"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView18" />
+
+
+        <com.tolunaykan.drawinglibrary.PaintView
+            android:id="@+id/paintView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/layout_brush"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_title"
+            tools:layout_editor_absoluteY="20dp" />
+
+
+        <LinearLayout
+            android:id="@+id/layout_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_menu"
+            android:orientation="vertical"
+            android:padding="15dp"
+         android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@id/imageView21"
+            app:layout_constraintTop_toBottomOf="@+id/imageView21">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_medium"
+                android:text="Share"
+                android:background="?attr/selectableItemBackground"
+                android:textColor="#FFAC7E"
+                android:textSize="10sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="5dp"
+                android:background="#FFAC7E" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_medium"
+                android:text="Add To Trash"
+                android:background="?attr/selectableItemBackground"
+                android:textColor="#FFAC7E"
+                android:textSize="10sp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="5dp"
+                android:background="#FFAC7E" />
+
+            <TextView
+                android:id="@+id/change_background"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_medium"
+                android:text="Change Background"
+                android:background="?attr/selectableItemBackground"
+                android:textColor="#FFAC7E"
+                android:textSize="10sp" />
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/layout_brush"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#FFEBE0"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/_20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:id="@+id/pencil_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:src="@drawable/pencil_1" />
+
+            <ImageView
+                android:id="@+id/pencil_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:src="@drawable/pencil_2" />
+
+            <ImageView
+                android:id="@+id/pencil_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:src="@drawable/pencil_3" />
+
+            <ImageView
+                android:id="@+id/eraser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:src="@drawable/eraser" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

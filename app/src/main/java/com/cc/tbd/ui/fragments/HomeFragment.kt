@@ -24,6 +24,7 @@ import com.cc.tbd.databinding.FragmentHomeBinding
 import com.cc.tbd.models.Note
 import com.cc.tbd.models.SaveNotes
 import com.cc.tbd.models.SubNote
+import com.cc.tbd.models.User
 import com.cc.tbd.ui.activities.MainActivity
 import com.cc.tbd.ui.utils.BottomSheetDialog
 import com.cc.tbd.ui.utils.ImageTextExtractor
@@ -40,6 +41,7 @@ import com.karumi.dexter.PermissionToken
 import com.karumi.dexter.listener.PermissionRequest
 import com.karumi.dexter.listener.multi.MultiplePermissionsListener
 import gun0912.tedimagepicker.builder.TedImagePicker
+import gun0912.tedimagepicker.util.ToastUtil
 import kotlinx.coroutines.launch
 import java.io.File
 
@@ -84,6 +86,17 @@ class HomeFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_home, container, false)
+
+        FirebaseFirestore.getInstance().collection("user").document(FirebaseAuth.getInstance().uid.toString())
+            .addSnapshotListener { value, error ->
+
+                if(error == null){
+                    mContext.currentUser = value?.toObject(User::class.java)!!
+                }
+
+                Log.v("TAG","current user referal size :${mContext.currentUser.referral?.size}")
+            }
+
 
           val directory1 = mContext.cacheDir
           val directory2 = mContext.externalCacheDir

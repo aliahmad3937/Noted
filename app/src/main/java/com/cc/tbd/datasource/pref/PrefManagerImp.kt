@@ -5,9 +5,7 @@ import androidx.datastore.preferences.core.edit
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 
-internal class PrefManagerImp(
-    context: Context
-) : PrefManager {
+internal class PrefManagerImp(context: Context) : PrefManager {
     private val dataStore = context.dataStore
 
     override fun isAnalyzingCompleted(): Flow<Boolean> = dataStore.data

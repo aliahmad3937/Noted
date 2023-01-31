@@ -35,17 +35,20 @@ class SaveNotesAdapter(
 
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+    try {
         pos = position
         val model = mList[position]
 
-            holder.mBinding.textView13.text = model.title
-            holder.mBinding.time.text = getDateCurrentTimeZone(model.timestamp!!)
+        holder.mBinding.textView13.text = model.title
+        holder.mBinding.time.text = getDateCurrentTimeZone(model.timestamp!!)
 
         val index = model.sub_notes?.indexOfFirst {
             it.imageUri != null
         }
         Glide.with(context).load(model.sub_notes?.get(index!!)!!.imageUri).into( holder.mBinding.image);
         holder.mBinding.caption.text = model.sub_notes?.get(index!!)!!.caption
+    }catch (e:Exception){}
+
 
         holder.mBinding.imageView14.setOnClickListener {
             holder.mBinding.layoutOption.visibility =

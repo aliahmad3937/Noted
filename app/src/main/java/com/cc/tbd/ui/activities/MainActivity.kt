@@ -17,6 +17,7 @@ import androidx.localbroadcastmanager.content.LocalBroadcastManager
 import com.cc.tbd.R
 import com.cc.tbd.models.Note
 import com.cc.tbd.models.SubNote
+import com.cc.tbd.models.User
 import com.github.dhaval2404.imagepicker.ImagePicker
 
 class MainActivity : AppCompatActivity() {
@@ -33,6 +34,8 @@ class MainActivity : AppCompatActivity() {
     var plan = ""
     var price = ""
     var days =""
+
+    var currentUser:User = User()
 
 
     override fun onCreate(savedInstanceState: Bundle?) {

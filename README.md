@@ -28,13 +28,19 @@ User can make Office , Universities and colleges notes  Voice, Image, OCR and Pa
 
 # Pictures
 <p float="left">
-<img src="https://github.com/aliahmad3937/Centrum/blob/master/asset/login.jpg" width="150" height="280">
-<img src="https://github.com/aliahmad3937/Centrum/blob/master/asset/signup.jpg" width="150" height="280">
-<img src="https://github.com/aliahmad3937/Centrum/blob/master/asset/homePage.jpg" width="150" height="280">
-<img src="https://github.com/aliahmad3937/Centrum/blob/master/asset/googleMap.jpg" width="150" height="280">
-<img src="https://github.com/aliahmad3937/Centrum/blob/master/asset/activityTimer.jpg" width="150" height="280">
+<img src="https://github.com/aliahmad3937/Noted/blob/master/asset/audioNote.jpeg" width="150" height="280">
+<img src="https://github.com/aliahmad3937/Noted/blob/master/asset/colorPiker.jpeg" width="150" height="280">
+<img src="https://github.com/aliahmad3937/Noted/blob/master/asset/drawer.jpeg" width="150" height="280">
+<img src="https://github.com/aliahmad3937/Noted/blob/master/asset/login.jpeg" width="150" height="280">
+<img src="https://github.com/aliahmad3937/Noted/blob/master/asset/note.jpeg" width="150" height="280">
 </p>
 
+<p float="left">
+<img src="https://github.com/aliahmad3937/Noted/blob/master/asset/paint.jpeg" width="150" height="280">
+<img src="https://github.com/aliahmad3937/Noted/blob/master/asset/signup.jpeg" width="150" height="280">
+<img src="https://github.com/aliahmad3937/Noted/blob/master/asset/subscription.jpeg" width="150" height="280">
+
+</p>
 
 
 

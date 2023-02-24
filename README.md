@@ -12,7 +12,7 @@ User can make Office , Universities and colleges notes  Voice, Image, OCR and Pa
 
 
 # Technologies
-- Firebase
+- Firebase Firestore DB / Storage
 - OCR Library to sacn text from image
 - itext library to expoert note in Pdf
 - Paint Library to Draw Sketch change Pencil size and sketch color and background Color

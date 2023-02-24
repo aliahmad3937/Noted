@@ -1,31 +1,29 @@
 # Noted
 
-An App where user can earn points while using app and can purchase crypto and gift card from earning points.
+User can make Office , Universities and colleges notes  Voice, Image, OCR and Paint notes, Can change note background color, Can export note in Pdf, Can share referral code to avail app free usage and buy a subscription plan to use app.  
 
 
 # Features
-- Authentiction with email / Google 
-- Auto Places Suggestion/ Map Direction with or without Voice
-- Buy Points Or Can Buy Sbscription
-- Earn Points while App Usage 
-- Can Purchase Crypto and Gift card from Points
-- Notification when friend Driving
-- Can make friends to check their activities
+- SignUp & ReferalCode for free Usage 
+- Voice Note / OCR Note / Sketch Note and Pdf Note
+- Share Note on Social Media Or with Friends
+- Can Export note in Pdf 
 - Profile Updation or many more
 
 
 # Technologies
-- Google Map
-- MapBox SDK
-- FCM
-- Rest APIs
-- In-App Purchase
+- Firebase
+- OCR Library to sacn text from image
+- itext library to expoert note in Pdf
+- Paint Library to Draw Sketch change Pencil size and sketch color and background Color
+- Dropbox for backup
+- In-App subscription for bloking Ads
+- AdMob
 - Clean Architecture
 - MVVM and other Design Patterns
-- Coroutines
-- Flow
+- Coroutines / Suspended Coroutine
+- Flow / CallBack Flow
 - Solid Principles
-
 
 
 # Pictures
@@ -37,29 +35,8 @@ An App where user can earn points while using app and can purchase crypto and gi
 <img src="https://github.com/aliahmad3937/Centrum/blob/master/asset/activityTimer.jpg" width="150" height="280">
 </p>
 
-<p float="left">
-<img src="https://github.com/aliahmad3937/Centrum/blob/master/asset/mapBoxDirection.jpg" width="150" height="280">
-<img src="https://github.com/aliahmad3937/Centrum/blob/master/asset/placeSearch.jpg" width="150" height="280">
-<img src="https://github.com/aliahmad3937/Centrum/blob/master/asset/autoPlaceSuggestions.jpg" width="150" height="280">
-<img src="https://github.com/aliahmad3937/Centrum/blob/master/asset/googleMap.jpg" width="150" height="280">
-<img src="https://github.com/aliahmad3937/Centrum/blob/master/asset/leftDrawer.jpg" width="150" height="280">
-</p>
 
-<p float="left">
-<img src="https://github.com/aliahmad3937/Centrum/blob/master/asset/incentives.jpg" width="150" height="280">
-<img src="https://github.com/aliahmad3937/Centrum/blob/master/asset/gift.jpg" width="150" height="280">
-<img src="https://github.com/aliahmad3937/Centrum/blob/master/asset/cryptoWallets.jpg" width="150" height="280">
-<img src="https://github.com/aliahmad3937/Centrum/blob/master/asset/earnPoints.jpg" width="150" height="280">
-<img src="https://github.com/aliahmad3937/Centrum/blob/master/asset/focus.jpg" width="150" height="280">
-</p>
 
-<p float="left">
-<img src="https://github.com/aliahmad3937/Centrum/blob/master/asset/myPoints.jpg" width="150" height="280">
-<img src="https://github.com/aliahmad3937/Centrum/blob/master/asset/myReward.jpg" width="150" height="280">
-<img src="https://github.com/aliahmad3937/Centrum/blob/master/asset/profile.jpg" width="150" height="280">
-<img src="https://github.com/aliahmad3937/Centrum/blob/master/asset/buyPoints.jpg" width="150" height="280">
-<img src="https://github.com/aliahmad3937/Centrum/blob/master/asset/buySubscription.jpg" width="150" height="280">
-</p>
 
 
 # License
